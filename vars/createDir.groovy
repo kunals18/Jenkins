@@ -9,7 +9,7 @@ def call(body){
         stages {
             stage("Clone Repo"){
                 steps{
-                    dir(${config.projectName}) {
+                    dir(config.projectName) {
                         git branch: 'master', url: 'https://github.com/AtlasBID/Combination.git'
                     }
                 }
