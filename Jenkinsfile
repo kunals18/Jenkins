@@ -5,16 +5,12 @@ pipeline {
     stages {
         stage('deploy kunal'){
             steps {
-                createDir {
-                    projectName = "kunal"
-                }
+                createDir("kunal")
             }
         }
         stage('deploy app1'){
             steps {
-                createDir {
-                    projectName = "app1"
-                }
+                createDir("app1")
             }
         }
     }
