@@ -1,10 +1,9 @@
-@Library('jalogut/jenkins-basic-shared-library-sample') _
-standardPipeline {
-    projectName = "Project1"
-    serverDomain = "Project1 Server Domain"
+@Library('kunals18/Jenkins') _
+
+createDir {
+    projectName = "kunal"
 }
 
-standardPipeline {
-    projectName = "Kunal"
-    serverDomain = "Kunal Server Domain"
+createDir {
+    projectName = "app1"
 }
